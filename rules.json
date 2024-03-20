@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "modifyHeaders",
+        "requestHeaders": [
+          {
+            "header": "X-Bug-Bounty",
+            "operation": "set",
+            "value": "Custom Header Value"
+          }
+        ]
+      },
+      "condition": {
+        "urlFilter": "*://*/*",
+        "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest", "script", "other"]
+      }
+    }
+  ]
+  
