@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Header Injector",
+    "version": "1.0",
+    "description": "Adds a custom header to all HTTP requests",
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    },
+    "host_permissions": [
+      "*://*/*"
+    ]
+  }
+  
